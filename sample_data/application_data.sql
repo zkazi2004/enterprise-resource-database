@@ -1,0 +1,3 @@
+
+INSERT INTO Application VALUES
+(5001, 3, 1001);
