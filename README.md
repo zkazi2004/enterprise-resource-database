@@ -1,33 +1,31 @@
 # Enterprise Resource Database Design
 
-This project models the operations of a fictional manufacturing and HR company using a relational database design. The system captures data for employees, departments, job applications, products, vendors, and sales, and is implemented in Oracle SQL.
+This project simulates the data infrastructure of a fictional manufacturing and HR company using a normalized relational database. It models key operations like hiring, staffing, department assignments, and job applications, implemented in standard SQL.
 
-## Features
+## 🔧 Features
 
-- EER-based schema modeling with normalization to 3NF
-- Multi-entity relationships (e.g., employees, customers, departments, products)
-- SQL scripts to create all tables with primary/foreign key constraints
-- Sample data insertion scripts
-- Advanced SQL queries including joins, aggregations, subqueries, and views
+- EER-based schema design with generalization and entity relationships
+- Fully normalized schema (3NF) with primary and foreign key constraints
+- Modular scripts for table creation, sample data insertion, and analytics
+- Sample queries covering joins, groupings, and real-world business logic
 
-## Structure
+## 📁 Folder Structure
 
-- `sql_scripts/` — CREATE TABLE scripts for all entities and relationships
-- `sample_data/` — INSERT statements to populate the database
-- `queries/` — Sample SELECT queries for business logic and analytics
+- `sql_scripts/` – CREATE TABLE statements for all entities and relationships
+- `sample_data/` – INSERT INTO statements for core entities (personnel, departments, etc.)
+- `queries/` – Sample business queries (e.g., applicant-job matching, job count per department)
 
-## Getting Started
+## 🚀 Getting Started
 
-1. Use Oracle SQL or any compatible RDBMS to execute the scripts in `sql_scripts/`
-2. Insert the data using files in `sample_data/`
-3. Run complex queries from `queries/` to explore the database
+1. Load `sql_scripts/*.sql` into Oracle SQL (or any compatible RDBMS)
+2. Populate the schema using files in `sample_data/`
+3. Run analytics from the `queries/` folder to explore relationships and insights
 
-## Example Queries
+## 📊 Example Queries
 
-- Average salary per employee
-- Number of interviews passed per candidate
-- Sales metrics per product type
-- Total part cost per product
+- Count of applications submitted per candidate
+- Job listings grouped by department
+- Full candidate and job application details via joins
 
 ---
 
